@@ -1,0 +1,11 @@
+@model UrunYonetimSistemi.Models.Product
+
+<h2>Ürün Sil</h2>
+
+<p>Bu ürünü silmek istediðinize emin misiniz?</p>
+<p>@Model.Name - @Model.Description</p>
+
+<form method="post">
+    <button type="submit">Sil</button>
+    <a href="/Product/Index">Ýptal</a>
+</form>

@@ -1,0 +1,29 @@
+@model List<UrunYonetimSistemi.Models.Product>
+    @{
+    Layout = "_Layout";
+    }
+    <h2>Ürün Listesi</h2>
+
+    <a href="/Product/Create">Yeni Ürün</a>
+
+    <table border="1">
+        <tr>
+            <th>Ad</th>
+            <th>Açýklama</th>
+            <th>Fiyat</th>
+            <th>Stok</th>
+            <th>Ýþlem</th>
+        </tr>
+        @foreach(var item in Model)
+{
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+            <td>
+                <a href="/Product/Delete/@item.Id">Sil</a>
+            </td>
+        </tr>
+    }
+    </table>
