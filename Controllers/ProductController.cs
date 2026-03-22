@@ -14,20 +14,20 @@ namespace UrunYonetimSistemi.Controllers
             _context = context;
         }
 
-        // 1. Ürünleri Listeleme
+        //  Listeleme
         public IActionResult Index()
         {
             var products = _context.Products.ToList();
             return View(products);
         }
 
-        // 2. Ürün Ekleme (GET)
+       
         public IActionResult Create()
         {
             return View();
         }
 
-        // 3. Ürün Ekleme (POST)
+        //Ekleme (POST)
         [HttpPost]
         public IActionResult Create(Product product)
         {
@@ -44,7 +44,7 @@ namespace UrunYonetimSistemi.Controllers
             return View(product);
         }
 
-        // 4. Ürün Düzenleme (GET)
+        
         public IActionResult Edit(int id)
         {
             var product = _context.Products.Find(id);
@@ -53,7 +53,7 @@ namespace UrunYonetimSistemi.Controllers
             return View(product);
         }
 
-        // 5. Ürün Düzenleme (POST)
+        //Düzenleme (POST)
         [HttpPost]
         public IActionResult Edit(Product product)
         {
@@ -66,7 +66,7 @@ namespace UrunYonetimSistemi.Controllers
             return View(product);
         }
 
-        // 6. Ürün Silme (GET)
+  
         public IActionResult Delete(int id)
         {
             var product = _context.Products.Find(id);
@@ -75,7 +75,7 @@ namespace UrunYonetimSistemi.Controllers
             return View(product);
         }
 
-        // 7. Ürün Silme (POST)
+        //Silme (POST)
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {

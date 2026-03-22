@@ -185,3 +185,4 @@ C:\Users\Huawei\UrunYonetimSistemi\obj\Debug\net9.0\refint\UrunYonetimSistemi.dl
 C:\Users\Huawei\UrunYonetimSistemi\obj\Debug\net9.0\UrunYonetimSistemi.pdb
 C:\Users\Huawei\UrunYonetimSistemi\obj\Debug\net9.0\UrunYonetimSistemi.genruntimeconfig.cache
 C:\Users\Huawei\UrunYonetimSistemi\obj\Debug\net9.0\ref\UrunYonetimSistemi.dll
+C:\Users\Huawei\UrunYonetimSistemi\obj\Debug\net9.0\UrunYonetimSistemi.sourcelink.json
