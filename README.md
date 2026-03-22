@@ -53,12 +53,12 @@ dotnet ef database update
 dotnet build
 dotnet run
 
-http://localhost:5124/Home/Login
+http://localhost:5124/Account/Login
 
 seed kullanıcı
 Username: yagmur Password: 1234
 http://localhost:5124/Product/Create
-http://localhost:5124/Product
+http://localhost:5124/Product/Index
 
 Screenshots
 Login Page
