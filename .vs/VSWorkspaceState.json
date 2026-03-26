@@ -5,9 +5,10 @@
     "\\Migrations",
     "\\Migrations\\Data",
     "\\Views",
-    "\\Views\\Product",
-    "\\wwwroot\\css"
+    "\\Views\\Account",
+    "\\Views\\Home",
+    "\\Views\\Product"
   ],
-  "SelectedNode": "\\gitignore",
+  "SelectedNode": "\\Views\\Product\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

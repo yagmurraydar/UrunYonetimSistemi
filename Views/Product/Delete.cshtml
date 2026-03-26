@@ -1,11 +1,23 @@
 @model UrunYonetimSistemi.Models.Product
 
-<h2>Ürün Sil</h2>
+<h2 class="mb-4 text-danger">Ürün Sil</h2>
 
-<p>Bu ürünü silmek istediðinize emin misiniz?</p>
-<p>@Model.Name - @Model.Description</p>
+<div class="card p-4 shadow-sm">
 
-<form method="post">
-    <button type="submit">Sil</button>
-    <a href="/Product/Index">Ýptal</a>
-</form>
+    <p class="mb-3">
+        <strong>@Model.Name</strong> ürününü silmek istediðinize emin misiniz?
+    </p>
+
+    <form method="post">
+
+        <button type="submit" class="btn btn-danger">
+            Evet Sil
+        </button>
+
+        <a href="/Product/Index" class="btn btn-secondary">
+            Ýptal
+        </a>
+
+    </form>
+
+</div>

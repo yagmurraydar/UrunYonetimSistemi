@@ -1,27 +1,38 @@
-@{
-ViewData["Title"] ="Login";
-}
-<h2>Giriþ Yapýnýz</h2>
+<h2 class="text-center mb-4">Giriþ Yap</h2>
 
-<form method="post">
-    <div>
-        <label>
-            Kullanýcý Adý:
-        </label>
-        <input type:"text" name="username" />
+<div class="row justify-content-center">
+    <div class="col-md-4">
+
+        <div class="card shadow-sm">
+            <div class="card-body">
+
+                <form method="post">
+
+                    <div class="mb-3">
+                        <label class="form-label">Kullanýcý Adý</label>
+                        <input type="text" name="username" class="form-control" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Þifre</label>
+                        <input type="password" name="password" class="form-control" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Giriþ Yap
+                    </button>
+
+                </form>
+
+                @if(ViewBag.Error != null)
+                {
+                <div class="alert alert-danger mt-3">
+                    @ViewBag.Error
+                </div>
+                }
+
+            </div>
+        </div>
 
     </div>
-
-    <div>
-        <label>
-            Þifre:
-        </label>
-        <input type=" password" name="password"/>
-    </div>
-
-    <button type="submit">Giriþ Yap</button>
-</form>
-@if(ViewBag.Error != null)
-{
-<p style="color:red">@ViewBag.Error</p>
-}
+</div>
